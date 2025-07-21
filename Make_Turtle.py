@@ -54,12 +54,17 @@ player_seventh.setheading(90)
 #골대 그리는 코드
 player_one.goto(-200,250)
 player_one.setheading(0)
+player_one.fillcolor("red")
+player_one.begin_fill()
+
 player_one.pendown()
 for _ in range(2):
     player_one.forward(400)
     player_one.right(90)
     player_one.forward(20)
     player_one.right(90)
+
+player_one.end_fill()
 player_one.penup()    
 player_one.goto(-300,-300)
 player_one.setheading(90)
